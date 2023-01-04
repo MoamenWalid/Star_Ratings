@@ -1,0 +1,65 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+select#sel, input {
+  width: 100%;
+  padding: 3px 8px;
+  border: 1px solid #11111142;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+  font-family: 'Cairo', sans-serif;
+}
+
+input[type="number"] {background: #eeeeee9e;caret-color: #2196f3;}
+
+table {
+  width: 100%;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+th {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  position: relative;
+}
+
+tbody th {
+  font-weight: normal;
+}
+
+.star-out {
+  position: relative;
+  display: inline-block;
+}
+
+.star-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.star-out::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ccc;
+}
+
+.star-up::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}

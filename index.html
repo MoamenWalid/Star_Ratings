@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Ratings</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <select name="select-products" id="sel">
+      <option value="select" selected disabled>Select Products</option>
+      <option value="sony">Sony 4K TV</option>
+      <option value="samsung">Samsung 4K TV</option>
+      <option value="vizier">Vizier 4K TV</option>
+      <option value="panasonic">Panasonic 4K TV</option>
+      <option value="phillips">Phillips 4K TV</option>
+    </select>
+    <div class="range-number">
+      <input type="number" step="0.1" max="5" placeholder="Rate 1-5"> 
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>4K Television</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="sony">
+          <th>Sony 4K TV</th>
+          <th>
+            <div class="star-out">
+              <div class="star-up" data-width></div>
+            </div>
+            <span class="rate">4.5</span>
+          </th>
+        </tr>
+        <tr class="samsung">
+          <th>Samsung 4K TV</th>
+          <th>
+            <div class="star-out">
+              <div class="star-up" data-width></div>
+            </div>
+            <span class="rate">3.2</span>
+          </th>
+        </tr>
+        <tr class="vizier">
+          <th>Vizier 4K TV</th>
+          <th>
+            <div class="star-out">
+              <div class="star-up" data-width></div>
+            </div>
+            <span class="rate">2.3</span>
+          </th>
+        </tr>
+        <tr class="panasonic">
+          <th>Panasonic 4K TV</th>
+          <th>
+            <div class="star-out">
+              <div class="star-up" data-width></div>
+            </div>
+            <span class="rate">3.7</span>
+          </th>
+        </tr>
+        <tr class="phillips">
+          <th>phillips 4K TV</th>
+          <th>
+            <div class="star-out">
+              <div class="star-up" data-width></div>
+            </div>
+            <span class="rate">1.9</span>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
